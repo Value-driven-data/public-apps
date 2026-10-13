@@ -6,10 +6,6 @@ code. Runs on **Snowpark Container Services (SPCS)**: a FastAPI backend + a Reac
 containers, with all training/prediction executed as Snowpark Python stored procedures on the
 consumer's warehouse (the container itself has no ML libraries).
 
-This app was carved out of the larger "021" app. Everything non-forecasting was removed:
-BI/dashboards, Integria, the general assistant, the connector helper, nexus, and the regression /
-classification / clustering features. Only forecasting remains.
-
 ## How it works
 1. Connect a data source (database + schema) via the selector.
 2. Ingest a dataset — upload a CSV or reference an existing table.
